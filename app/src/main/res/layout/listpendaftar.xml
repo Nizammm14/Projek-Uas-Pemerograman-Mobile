@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="370dp"
+    android:layout_height="330dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:layout_marginBottom="5dp"
+    android:outlineSpotShadowColor="@color/primaryColor"
+    app:cardCornerRadius="8dp"
+    android:layout_gravity=""
+    app:cardElevation="9dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivTerdaftar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/anna" />
+
+        <TextView
+            android:id="@+id/tvNamaDokterTerdaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/ivTerdaftar"
+            android:fontFamily="@font/oswald_medium"
+            android:text="Nama Dokter"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/vGaris"
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/ivTerdaftar"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-10dp"
+            android:background="@android:color/darker_gray"
+            android:outlineSpotShadowColor="@color/primaryColor" />
+
+        <TextView
+            android:id="@+id/tvNamaTerdaftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vGaris"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Nama:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvIsiNamaTerdaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vGaris"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tvNamaTerdaftar"
+            android:text="Isma"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvUsiaTerdaftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNamaTerdaftar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Tanggal:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNamaTerdaftar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tvUsiaTerdaftar"
+            android:text="dd-mm-yyyy"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvJam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUsiaTerdaftar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Jam:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUsiaTerdaftar"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tvJam"
+            android:text="00:00"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

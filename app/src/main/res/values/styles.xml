@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Projek_mobile" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary" >@color/primaryColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="color">@color/abu</item>
+        <item name="color">@color/green</item>
+        <item name="color">@color/transparan</item>
+        <item name="color">@color/grey</item>
+
+    </style>
+</resources>

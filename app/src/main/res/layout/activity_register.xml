@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50sp"
+        android:src="@drawable/logoremove" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img1"
+        android:text="Register"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="20dp"
+        android:textColor="@color/primaryColor"
+        android:layout_marginTop="10dp"/>
+
+
+    <EditText
+        android:id="@+id/edt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input"
+        android:width="300dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"/>
+
+    <EditText
+        android:id="@+id/edt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input"
+        android:layout_below="@id/edt4"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:width="300dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"/>
+
+    <EditText
+        android:id="@+id/edt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt5"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/input"
+        android:layout_marginTop="5dp"
+        android:width="300dp"
+        android:hint="Konfirmasi Password"
+        android:inputType="textPassword"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt6"
+
+        android:text="BUAT AKUN"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:width="300dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"/>
+
+
+</RelativeLayout>

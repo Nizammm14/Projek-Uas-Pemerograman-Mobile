@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".siapDiet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/beranda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparan"
+            android:paddingTop="11dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/home_black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siap Diet"
+            android:textColor="@color/primaryColor"
+            android:paddingTop="15dp"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/pencarian"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/pencarian_beranda"
+            android:width="350dp"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="25dp"
+        android:layout_marginTop="105dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/primaryColor"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="9dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/tekan"
+                        android:layout_width="132dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/transparan"
+                        android:src="@drawable/image_2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text11"
+                        android:layout_width="90dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/kotak"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="Artikel General"
+                        android:textColor="@color/primaryColor"
+                        android:layout_toRightOf="@+id/tekan"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"/>
+
+
+                    <TextView
+                        android:id="@+id/text13"
+                        android:layout_width="247dp"
+                        android:layout_height="72dp"
+                        android:layout_below="@+id/text11"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@id/tekan"
+                        android:fontFamily="@font/oswald_medium"
+                        android:text="Gizi Cukup, Sehat, dan Semangat"
+                        android:textSize="15dp"
+                        android:textColor="@color/primaryColor" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/primaryColor"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="9dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/tekan1"
+                        android:layout_width="132dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/transparan"
+                        android:src="@drawable/image_2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text14"
+                        android:layout_width="90dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/kotak"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="Nutrisi remaja"
+                        android:textColor="@color/primaryColor"
+                        android:layout_toRightOf="@+id/tekan1"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="90dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="108dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_toRightOf="@+id/tekan1"
+                        android:background="@drawable/kotak"
+                        android:fontFamily="@font/oswald_regular"
+                        android:gravity="center"
+                        android:text="Nutrisi"
+                        android:textColor="@color/primaryColor" />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="247dp"
+                        android:layout_height="72dp"
+                        android:layout_below="@+id/text14"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@id/tekan1"
+                        android:fontFamily="@font/oswald_medium"
+                        android:text="Pentingnya Memilih Gizi Yang Baik Untuk Anak"
+                        android:textSize="15dp"
+                        android:textColor="@color/primaryColor" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/primaryColor"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="9dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/tekan3"
+                        android:layout_width="132dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/transparan"
+                        android:src="@drawable/image_2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text15"
+                        android:layout_width="90dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/kotak"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="Nutrisi remaja"
+                        android:textColor="@color/primaryColor"
+                        android:layout_toRightOf="@+id/tekan3"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/text16"
+                        android:layout_width="90dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="108dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_toRightOf="@+id/tekan3"
+                        android:background="@drawable/kotak"
+                        android:fontFamily="@font/oswald_regular"
+                        android:gravity="center"
+                        android:text="Nutrisi"
+                        android:textColor="@color/primaryColor" />
+
+                    <TextView
+                        android:id="@+id/text17"
+                        android:layout_width="247dp"
+                        android:layout_height="72dp"
+                        android:layout_below="@+id/text15"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@id/tekan3"
+                        android:fontFamily="@font/oswald_medium"
+                        android:text="Wasting (Gizi Kurang dan Gizi Buruk) dan Dampaknya pada Anak"
+                        android:textSize="15dp"
+                        android:textColor="@color/primaryColor" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/primaryColor"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="9dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/tekan4"
+                        android:layout_width="132dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/transparan"
+                        android:src="@drawable/image_2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text18"
+                        android:layout_width="90dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/kotak"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="Artikel Detail"
+                        android:textColor="@color/primaryColor"
+                        android:layout_toRightOf="@+id/tekan4"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"/>
+
+
+
+                    <TextView
+                        android:id="@+id/text20"
+                        android:layout_width="247dp"
+                        android:layout_height="72dp"
+                        android:layout_below="@+id/text18"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@id/tekan4"
+                        android:fontFamily="@font/oswald_medium"
+                        android:text="8 Kandungan Gizi Penting untuk Hidup Sehat"
+                        android:textSize="15dp"
+                        android:textColor="@color/primaryColor" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/primaryColor"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="9dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/tekan5"
+                        android:layout_width="132dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/transparan"
+                        android:src="@drawable/image_2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text20"
+                        android:layout_width="90dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/kotak"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="Artikel Detail"
+                        android:textColor="@color/primaryColor"
+                        android:layout_toRightOf="@+id/tekan5"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"/>
+
+
+
+                    <TextView
+                        android:id="@+id/text21"
+                        android:layout_width="247dp"
+                        android:layout_height="72dp"
+                        android:layout_below="@+id/text20"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@id/tekan5"
+                        android:fontFamily="@font/oswald_medium"
+                        android:text="Gizi Seimbang Untuk Gaya Hidup Yang Sehat"
+                        android:textSize="15dp"
+                        android:textColor="@color/primaryColor" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/primaryColor"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="9dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/tekan6"
+                        android:layout_width="132dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/transparan"
+                        android:src="@drawable/image_2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text22"
+                        android:layout_width="90dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/kotak"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="Artikel Detail"
+                        android:textColor="@color/primaryColor"
+                        android:layout_toRightOf="@+id/tekan6"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"/>
+
+
+
+                    <TextView
+                        android:id="@+id/text23"
+                        android:layout_width="247dp"
+                        android:layout_height="72dp"
+                        android:layout_below="@+id/text22"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@id/tekan6"
+                        android:fontFamily="@font/oswald_medium"
+                        android:text="Mengenal Pedoman Gizi Seimbang dan Manfaat untuk Kesehatan"
+                        android:textSize="15dp"
+                        android:textColor="@color/primaryColor" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/primaryColor"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="9dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/tekan7"
+                        android:layout_width="132dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/transparan"
+                        android:src="@drawable/image_2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text24"
+                        android:layout_width="90dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/kotak"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="Makanan Sehat"
+                        android:textColor="@color/primaryColor"
+                        android:layout_toRightOf="@+id/tekan7"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"/>
+
+
+
+                    <TextView
+                        android:id="@+id/text25"
+                        android:layout_width="247dp"
+                        android:layout_height="72dp"
+                        android:layout_below="@+id/text24"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@id/tekan7"
+                        android:fontFamily="@font/oswald_medium"
+                        android:text="Jumlah Kebutuhan Zat Gizi yang Dibutuhkan oleh Tubuh Manusia"
+                        android:textSize="15dp"
+                        android:textColor="@color/primaryColor" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/primaryColor"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="9dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/tekan8"
+                        android:layout_width="132dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/transparan"
+                        android:src="@drawable/image_2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text26"
+                        android:layout_width="90dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/kotak"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="Makanan Sehat"
+                        android:textColor="@color/primaryColor"
+                        android:layout_toRightOf="@+id/tekan8"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"/>
+
+
+
+                    <TextView
+                        android:id="@+id/text27"
+                        android:layout_width="247dp"
+                        android:layout_height="72dp"
+                        android:layout_below="@+id/text26"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@id/tekan8"
+                        android:fontFamily="@font/oswald_medium"
+                        android:text="Komposisi Zat Dalam Pola Makan Yang Bergizi dan Seimbang"
+                        android:textSize="15dp"
+                        android:textColor="@color/primaryColor" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/primaryColor"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="9dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/tekan9"
+                        android:layout_width="132dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/transparan"
+                        android:src="@drawable/image_2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text28"
+                        android:layout_width="90dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/kotak"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="Artikel Detail"
+                        android:textColor="@color/primaryColor"
+                        android:layout_toRightOf="@+id/tekan9"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/text29"
+                        android:layout_width="247dp"
+                        android:layout_height="72dp"
+                        android:layout_below="@+id/text28"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@id/tekan9"
+                        android:fontFamily="@font/oswald_medium"
+                        android:text="Bagaimana Kriteria Makanan Sehat Dan Bergizi
+"
+                        android:textSize="15dp"
+                        android:textColor="@color/primaryColor" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

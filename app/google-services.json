@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1044785846398",
+    "project_id": "projekmobile-d8721",
+    "storage_bucket": "projekmobile-d8721.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044785846398:android:7c633609735076858e602f",
+        "android_client_info": {
+          "package_name": "com.android.projek_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhZOgy2LvqrgfSUjA7pEXy7E1nsQMk0XM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gizi Care</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="nama_dokter">Nama Dokter</string>
+    <string name="nama">Nama</string>
+    <string name="nama_mentor">Nama_mentor</string>
+    <string name="isi_tentang">isi tentang</string>
+</resources>

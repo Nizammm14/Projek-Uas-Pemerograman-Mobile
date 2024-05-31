@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailDokter">
+
+    <ImageView
+        android:id="@+id/ivDetail"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:src="@drawable/anna"/>
+    <ScrollView
+        android:layout_below="@id/ivDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-20dp"
+            app:cardElevation="30dp"
+            android:layout_below="@id/ivDetail"
+            app:cardCornerRadius="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="28dp">
+
+                <TextView
+                    android:id="@+id/tvNamaDokter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nama_mentor"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/jomhuria"
+                    android:textColor="@color/primaryColor"/>
+                <TextView
+                    android:id="@+id/tvTentang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNamaDokter"
+                    android:text="Tentang"
+                    android:fontFamily="@font/josefin_reguler"
+                    android:textStyle="bold"
+                    android:textColor="@color/primaryColor"
+                    android:paddingTop="50dp"
+                    android:textSize="30dp"/>
+                <TextView
+                    android:id="@+id/tvIsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTentang"
+                    android:text="@string/isi_tentang"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/oswald_regular"/>
+
+                <Button
+                    android:id="@+id/btnBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvIsi"
+                    android:background="@drawable/shape"
+                    android:layout_marginTop="170dp"
+                    android:fontFamily="@font/jomhuria"
+                    android:text="Booking Now"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</RelativeLayout>

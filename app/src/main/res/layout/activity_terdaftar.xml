@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".Terdaftar">
+
+    <ImageButton
+        android:id="@+id/ibHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/transparan"
+        android:src="@drawable/home_black"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageTerdaftar"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/ibHome"
+        android:layout_centerInParent="true"
+        android:src="@drawable/terdaftar" />
+    <TextView
+        android:id="@+id/TvTerdaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terdaftar"
+        android:layout_below="@id/imageTerdaftar"
+        android:layout_centerInParent="true"
+        android:textSize="40dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvKata"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvTerdaftar"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="50dp"
+        android:text="Selamat anda telah terdaftar silahkan datang kerumah sakit yang telah di tentukan" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="8000dp"
+        android:layout_below="@id/tvKata"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-29dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="-33dp"
+        app:cardCornerRadius="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

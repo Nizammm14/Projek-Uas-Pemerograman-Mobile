@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".kalender">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/tvRencana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="-115dp"
+        android:layout_toLeftOf="@+id/ivBack"
+        android:textStyle="bold"
+        android:text="Schedule"
+        android:textColor="@color/primaryColor" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRencana">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvRencana"
+            android:layout_marginTop="20dp">
+
+
+            <ImageView
+                android:id="@+id/ivGambar"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/user_1" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="370dp"
+                android:layout_height="460dp"
+                android:layout_below="@id/ivGambar"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvPasien"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Nama"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/etPasien"
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvPasien"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="19dp"
+                        android:background="@drawable/input"
+                        android:padding="10dp"
+                        android:paddingLeft="15dp"
+                        android:textSize="15dp"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/tvNik"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/etPasien"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Nik"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/etNik"
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvNik"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="19dp"
+                        android:background="@drawable/input"
+                        android:padding="10dp"
+                        android:paddingLeft="15dp"
+                        android:textSize="15dp"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/tvDokter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etNik"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Dokter"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/etDokter"
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvDokter"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="19dp"
+                        android:background="@drawable/input"
+                        android:padding="10dp"
+                        android:paddingLeft="15dp"
+                        android:textSize="15dp"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+                    <TextView
+                        android:id="@+id/tvTanggal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/etDokter"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Tanggal"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/etTanggal"
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvTanggal"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="19dp"
+                        android:background="@drawable/input"
+                        android:padding="10dp"
+                        android:paddingLeft="15dp"
+                        android:textSize="15dp"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:id="@+id/tvJam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/etTanggal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Waktu"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/etJam"
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvJam"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="19dp"
+                        android:background="@drawable/input"
+                        android:padding="10dp"
+                        android:paddingLeft="15dp"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/tvKeluhan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/etJam"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Keluhan"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/etKeluhan"
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvKeluhan"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="19dp"
+                        android:background="@drawable/input"
+                        android:padding="10dp"
+                        android:paddingLeft="15dp"
+                        android:textSize="15dp"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnBooking"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape"
+                android:fontFamily="@font/oswald_medium"
+                android:gravity="center"
+                android:text="Booking Now"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
